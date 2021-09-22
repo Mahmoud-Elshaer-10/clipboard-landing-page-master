@@ -5,9 +5,10 @@
   --Light-Blue: hsl(233, 100%, 69%);
   --Dark-Grayish-Blue: hsl(210, 10%, 33%);
   --Grayish-Blue: hsl(201, 11%, 66%);
+  --section-padding: 15rem;
 }
 .attribution {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .attribution a {
@@ -32,10 +33,132 @@ body {
   font-size: 1.8em;
   font-family: "Bai Jamjuree", sans-serif;
   /* - Weights: 400, 600 */
+  text-align: center;
 }
 /* Global Rules End */
+
+/* Components Start */
 .container {
   width: 87%;
   max-width: 1400px;
   margin: 0 auto;
 }
+h1,
+h2,
+h3 {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h3 + p {
+  margin-bottom: 5rem;
+}
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.6;
+}
+a.ios,
+a.mac {
+  display: block;
+
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 0;
+  border-radius: 100px;
+}
+a.ios {
+  background-color: var(--Strong-Cyan);
+  border-bottom: 4px solid #309583;
+  margin-bottom: 2.5rem;
+}
+a.mac {
+  background-color: var(--Light-Blue);
+  border-bottom: 4px solid #5765be;
+}
+/* Components End */
+
+/* Landing Start */
+.landing {
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--section-padding) 0;
+}
+.landing .logo {
+  margin: 0 auto;
+}
+.title-text {
+  margin: 5rem 0;
+}
+/* Landing End */
+
+/* Track Start */
+.track img {
+  margin: 5rem auto;
+}
+/* Track End */
+
+/* Access Start */
+.access {
+  padding: var(--section-padding) 0;
+}
+.access img {
+  margin: 5rem auto 0;
+}
+/* Access End */
+
+/* Supercharge Start */
+.supercharge h2 + p {
+  margin-bottom: 7rem;
+}
+.supercharge img {
+  margin: 0 auto 3rem;
+}
+/* Supercharge End */
+
+/* Logos Start */
+.logos {
+  padding: var(--section-padding) 0;
+}
+.logos img {
+  margin: 5rem auto;
+}
+/* Logos End */
+
+/* Clipboard Start */
+.clipboard {
+  padding-bottom: var(--section-padding);
+}
+.clipboard .row {
+  margin-top: 5rem;
+}
+/* Clipboard End */
+
+/* Footer Start */
+footer {
+  background-color: #f5f6f8;
+  padding: 5rem 0;
+}
+footer .logo {
+  width: 50px;
+  margin: 0 auto 4rem;
+}
+footer a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2rem;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 5rem 0;
+}
+/* Footer End */
